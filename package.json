@@ -1,0 +1,30 @@
+{
+  "name": "@keshavsoft/json-api-builder-validation",
+  "version": "1.0.0",
+  "description": "Validate configuration and generated application stage for JSON API Builder.",
+  "type": "module",
+  "main": "./src/v1/index.js",
+  "exports": {
+    ".": "./src/v1/index.js",
+    "./v1": "./src/v1/index.js",
+    "./validate-configuration": "./src/v1/validate-configuration.js",
+    "./verify-generated-app": "./src/v1/verify-generated-app.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check ./src/v1/index.js",
+    "test": "node --test ./test/v1/index.test.js",
+    "prepublishOnly": "npm run check && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {}
+}
