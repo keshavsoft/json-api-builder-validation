@@ -1,5 +1,5 @@
 {
-  "name": "@keshavsoft/json-api-builder-validation",
+  "name": "json-api-builder-validation",
   "version": "1.0.0",
   "description": "Validate configuration and generated application stage for JSON API Builder.",
   "type": "module",
